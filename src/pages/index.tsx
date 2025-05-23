@@ -1,115 +1,50 @@
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Table from "@/components/table/table";
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <section className="w-full">
+        <div className="w-full h-[752px] aspect-[375/752] bg-[url('/images/intro.png')] bg-cover bg-center relative">
+          <Image
+            className="absolute max-w-[157px] max-h-[84px] top-[84px] left-[50%] translate-x-[-50%] z-100"
+            src="/images/no-1-text.png"
+            alt="제 1장"
+            width={157}
+            height={84}
+          />
+
+          {/* 위쪽 그라데이션 */}
+          <div className="absolute left-0 top-0 w-full h-[261px] bg-gradient-to-b from-black to-transparent z-10"></div>
+          {/* 아래쪽 그라데이션 */}
+          <div className="absolute left-0 bottom-0 w-full h-[195px] bg-gradient-to-b from-transparent to-main-background z-10"></div>
+
+          {/* 첫번째 말풍선 */}
+          <div className="w-[215px] h-[139px] bg-[url('/images/Union.png')] bg-cover bg-center absolute top-[713px] left-[24px] z-30">
+            <p className="text-center leading-[150%] tracking-[-2.5%] mt-[45px]">
+              이제 본격적으로 <br />
+              OO님의 사주팔자를 <br />
+              분석해볼 차례네요.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="w-[95%] aspect-[351/285] bg-[url('/images/image2.png')] bg-cover bg-center mt-[144px]"></div>
+
+        {/* 두번째 말풍선 */}
+        <div className="w-full aspect-[375/306] bg-[url('/images/image3.png')] bg-cover bg-center mt-[20px] relative">
+          <div className="w-[239px] h-[138.78px] bg-[url('/images/Union2.png')] bg-cover bg-center absolute top-[-104px] left-[24px] z-30">
+            <p className="text-center leading-[150%] tracking-[-2.5%] mt-[34px]">
+              제가 oo님의 사주를 <br />
+              보기 쉽게 표로 정리했어요
+            </p>
+          </div>
+
+          {/* 아래쪽 그라데이션 */}
+          <div className="absolute left-0 bottom-0 w-full h-[118px] bg-gradient-to-b from-transparent to-main-background z-10"></div>
+        </div>
+      </section>
+      <Table />
+    </>
   );
 }

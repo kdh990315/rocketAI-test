@@ -1,0 +1,90 @@
+{
+  "時": {
+    "십성": [
+      { "title": "상관", "hanja": "傷官" },
+      { "title": "비견", "hanja": "比肩" }
+    ],
+    "천간": {
+      "title": "임",
+      "hanja": "壬",
+      "subHanja": "陽水",
+      "fiveCircleColor": "#2f2f2f"
+    },
+    "지지": {
+      "title": "인",
+      "hanja": "寅",
+      "subHanja": "陽木",
+      "fiveCircleColor": "#18868C"
+    },
+    "십이운성": { "title": "사", "hanja": "死" },
+    "십이신살": { "title": "겁살", "hanja": "劫殺" },
+    "귀인": []
+  },
+  "日": {
+    "십성": [
+      { "title": "비견", "hanja": "比肩" },
+      { "title": "겁재", "hanja": "劫財" }
+    ],
+    "천간": {
+      "title": "정",
+      "hanja": "丁",
+      "subHanja": "陰火",
+      "fiveCircleColor": "#c23030"
+    },
+    "지지": {
+      "title": "사",
+      "hanja": "巳",
+      "subHanja": "陰火",
+      "fiveCircleColor": "#c23030"
+    },
+    "십이운성": { "title": "제왕", "hanja": "帝旺" },
+    "십이신살": { "title": "지살", "hanja": "地殺" },
+    "귀인": []
+  },
+  "月": {
+    "십성": [
+      { "title": "상관", "hanja": "傷官" },
+      { "title": "식신", "hanja": "食神" }
+    ],
+    "천간": {
+      "title": "계",
+      "hanja": "癸",
+      "subHanja": "陰水",
+      "fiveCircleColor": "#2f2f2f"
+    },
+    "지지": {
+      "title": "해",
+      "hanja": "亥",
+      "subHanja": "陰水",
+      "fiveCircleColor": "#2f2f2f"
+    },
+    "십이운성": { "title": "태", "hanja": "胎" },
+    "십이신살": { "title": "역마살", "hanja": "驛馬殺" },
+    "귀인": [{ "title": "천을귀인", "hanja": "天乙" }]
+  },
+  "年": {
+    "십성": [
+      { "title": "상관", "hanja": "傷官" },
+      { "title": "편재", "hanja": "偏財" }
+    ],
+    "천간": {
+      "title": "계",
+      "hanja": "癸",
+      "subHanja": "陰水",
+      "fiveCircleColor": "#2f2f2f"
+    },
+    "지지": {
+      "title": "유",
+      "hanja": "酉",
+      "subHanja": "陰金",
+      "fiveCircleColor": "none"
+    },
+    "십이운성": { "title": "장생", "hanja": "長生" },
+    "십이신살": { "title": "장성살", "hanja": "將星殺" },
+    "귀인": [
+      { "title": "천을귀인", "hanja": "天乙" },
+      { "title": "태극귀인", "hanja": "太極" },
+      { "title": "문창귀인", "hanja": "文昌" }
+    ]
+  }
+}
